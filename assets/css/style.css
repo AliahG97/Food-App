@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+}
+
+aside {
+    width:15%;
+    height: auto;
+    display:flex;
+    flex:wrap;
+    margin:0;
+    display:inline-flex;
+    flex:wrap;
+    
+}
+main {
+    display:flex;
+    flex:wrap;
+    justify-content:center;
+    align-items:center;
+    
+
+}
