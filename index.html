@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +13,29 @@
         </script>
     <title>Food App</title>
 </head>
-<body>
-    <header class="siteName" id="siteName"><h1>Food App</h1>
-        <nav>
-            <p class="recipeList" id="recipeList">Recipe List (Most Popular)</p>
-            <p class="storeLocator" id="storeLocator">Grocery store locator</p>
-        </nav> 
 
-    </header>        
-    <aside class="otherRecipes" id="otherRecipes">
-    </aside>
-    <main class="row searchFilter">Search filter:
-    <input type="text" class="searchInput" id="searchInput" placeholder=" ingredients or recipe">
-        <button id="submitButton" class="submitBtn">Submit</button>
+<body>
+    <header class="siteName" id="siteName">
+        <h1>Food App</h1>
+        <nav>
+            <a href="" class="recipeList" id="recipeList">Recipe List (Most Popular)</a>
+            <a href="" class="storeLocator" id="storeLocator">Grocery store locator</a>
+        </nav>
+
+    </header>
+    <main class="searchFilter">Search filter:
+        <input type="text" class="col-8 searchInput" id="searchInput" placeholder="ingredients or recipe">
+        <button id="submitButton" class="col-4 submitBtn">Submit</button>
     </main>
-    <div class="row recipeSection p-2">
+    <div class="conatainer-fluid m-4">
+        <section class="row flex-md-nowrap flex-wrap-reverse">
+            <aside class="col-md-3 col-sm-12 otherRecipes" id="otherRecipes">
+            </aside>
+            <div class="col-md-9 col-sm-12 recipeSection" id="recipeSection">
+            </div>
+    </section>
     </div>
-   <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
