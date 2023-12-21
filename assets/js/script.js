@@ -90,7 +90,7 @@ searchBtnEl.addEventListener('click', function () {
 
 async function getRandomRecipes() {
     // TODO: fix the url (route)
-    var apiUrl = `${baseUrl}recipies/random?number=1&tags=vegetarian,desert`;
+    var apiUrl = `${baseUrl}recipes/random?number=1&tags=vegetarian,desert`;
     try {
         var response = await fetch(`${apiUrl}&apiKey=${apiKey}`);
         var data = await response.json();
@@ -106,6 +106,11 @@ async function getRandomRecipes() {
         console.error('Error fetching recipes:', error);
     }
 }
+
+
+document.getElementById('debug-btn').addEventListener('click', function(event) {
+    getRandomRecipes();
+});
 // getRandomRecipes();
 // var recipeContainer = document.getElementById('recipeContainer');
 // recipeContainer.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>;
