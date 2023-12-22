@@ -1,5 +1,6 @@
 // Set Variables
 var recipeListEl = document.querySelector('.recipeList');
+console.log(recipeListEl);
 var recipeSection = document.querySelector('.recipeSection')
 var recipeEl = [];
 var searchBtnEl = document.querySelector('.submitBtn');
@@ -7,7 +8,7 @@ var searchBtnEl = document.querySelector('.submitBtn');
 var baseUrl = 'https://api.spoonacular.com/';
 var byIngredients = 'recipes/findByIngredients?';
 var summarizeRecipe;
-var apiKey = 'ef9c25b2e22b4e0d8363c1109951f721';
+var apiKey = 'e3d6ede19b8b4ac39a3e036fefe8455a';
 
 var userIngredients;
 var byIngredientsUrl;
@@ -91,10 +92,12 @@ function getRecipeDescription(recipes) {
 
     async function getRandomRecipes() {
         // TODO: fix the url (route)
-        var apiUrl = `${baseUrl}recipies/random?number=1&tags=vegetarian,desert`;
+        // var apiUrl = `${baseUrl}recipies/random?number=1&tags=vegetarian,desert`;
+        var apiUrl2 = 'https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,dessert'
         try {
-            var response = await fetch(`${apiUrl}&apiKey=${apiKey}`);
+            var response = await fetch(`${apiUrl2}&apiKey=${apiKey}`);
             var data = await response.json();
+                console.log(data)
 
             var recipe = data.recipes[0];
             var recipeTitle = recipe.title;
@@ -110,3 +113,7 @@ function getRecipeDescription(recipes) {
     // getRandomRecipes();
     // var recipeContainer = document.getElementById('recipeContainer');
     // recipeContainer.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+    recipeListEl.addEventListener('click', function(){
+        console.log('hello')
+        getRandomRecipes();
+    })
