@@ -9,7 +9,8 @@ var baseUrl = 'https://api.spoonacular.com/';
 var byIngredients = 'recipes/findByIngredients?';
 var summarizeRecipe;
 //var apiKey = 'e3d6ede19b8b4ac39a3e036fefe8455a';
-var apiKey = 'ef9c25b2e22b4e0d8363c1109951f721';
+//var apiKey = 'ef9c25b2e22b4e0d8363c1109951f721';
+var apiKey = 'bfc4f5ea52604ac1a16b7909357b8eed';
 
 var userIngredients;
 var byIngredientsUrl;
