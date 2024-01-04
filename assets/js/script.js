@@ -3,6 +3,7 @@ var recipeListEl = document.querySelector('.recipeList');
 console.log(recipeListEl);
 var recipeSection = document.querySelector('.recipeSection')
 var searchBtnEl = document.querySelector('.submitBtn');
+var groceryStoreEl = document.querySelector('.storeLocator');
 //Spoonacular API Variables
 var baseUrl = 'https://api.spoonacular.com/';
 var byIngredients = 'recipes/findByIngredients?';
@@ -173,31 +174,29 @@ function init() { //Populate the Recent Recipes from local storage on initial pa
 }
 
 async function getRandomRecipes() {
-    // TODO: fix the url (route)
-    // var apiUrl = `${baseUrl}recipies/random?number=1&tags=vegetarian,desert`;
-    var apiUrl2 = 'https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,dessert'
+    var apiUrl2 = 'https://api.spoonacular.com/recipes/random?number=5&tags=vegetarian,dessert'
     try {
         var response = await fetch(`${apiUrl2}&apiKey=${apiKey}`);
         var data = await response.json();
-        console.log(data)
-
-        var recipe = data.recipes[0];
-        var recipeTitle = recipe.title;
-        var recipeInstructions = recipe.instructions;
-
-        console.log(`Recipe Title:${recipeTitle}`);
-        console.log(`Instructions: ${recipeInstructions}`);
+        console.log(data.recipes)
 
     } catch (error) {
         console.error('Error fetching recipes:', error);
     }
+    createRecipeList(data.recipes,data.recipes);
 };
-// getRandomRecipes();
-// var recipeContainer = document.getElementById('recipeContainer');
-// recipeContainer.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+
 recipeListEl.addEventListener('click', function () {
+    var containerEl = document.querySelector('.recipeSection');
+    if (containerEl.innerHTML !== '') {
+        containerEl.innerHTML = ''; // Clear data before new search
+    }
     console.log('hello')
     getRandomRecipes();
+})
+
+groceryStoreEl.addEventListener('click', function() {
+    window.open('https://www.google.com/maps/search/grocery+store/', '_blank');
 })
 
 init();
