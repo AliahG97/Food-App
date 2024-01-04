@@ -1,5 +1,5 @@
 body {
-    background-color: lightpink;
+    background-color:white   ;
 }
 
 header {
@@ -12,15 +12,15 @@ header {
     border: 2px solid black;
     padding: 10px;
     margin: 10px;
+    background: linear-gradient(to right, #F08080,#FFC0CB);
+    
 }
 
 aside {
     height: 100%;
     box-sizing: border-box;
     border: 2px solid black;
-    background-color:burlywood;
-
-
+    background-color:mistyrose;
 }
 
 .searchFilter {
@@ -32,8 +32,9 @@ aside {
     border-color: black;
     border: 2px solid black;
     margin: 10px;
+    height:75px;
+    background-color:lightpink;
 }
-
 .submitBtn {
     width: 100px;
     display: flex;
@@ -48,9 +49,7 @@ aside {
 .searchInput {
     border-radius: 10px;
     padding: 5px 10px;
-}
-.searchFilter {
-    padding: 10px;
+
 }
 
 .recipe {
@@ -62,12 +61,17 @@ aside {
     display:block;
     max-height: 400px;
     /* flex: 0 0 1; */
+    padding-top:10px;
+    padding-bottom:10px;
+    background: #FFB284;
 }
 
 .description {
     display: inline-block;
     white-space: pre-line;
     padding: 10px;
+    background-color: #FFDAB9;
+
 }
 
 .recipeName {
@@ -75,10 +79,12 @@ aside {
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
+    background-color:#FFDAB9;
+    color:black;
 }
 
 .recipeName:hover {
-    color: darkslateblue;
+    color: rgb(41, 11, 234);
     transition: all 1s;
 }
 
@@ -102,9 +108,18 @@ aside {
     margin: 5px 0px;
     color: black;
     font-size: medium;
-    border: 1px solid black; ;
+    border: 1px solid black; 
+    background:#C6C09C ;
 }
 .recentRecipe:hover {
-    background-color: beige;
+    background-color: #FFDAB9;
     transition: all 1s;
 }
+.recipeSection{
+    background-color: #FFDAB9; 
+}
+
+.storeLocator, .recipeList {
+    border-radius: 10px;
+}
+
