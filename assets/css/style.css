@@ -59,8 +59,9 @@ aside {
 }
 
 .recipeImg {
+    display:block;
     max-height: 400px;
-    flex: 0 0 1;
+    /* flex: 0 0 1; */
 }
 
 .description {
