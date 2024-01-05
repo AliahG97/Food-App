@@ -1,39 +1,8 @@
-:root {
-    --borderCol: black;
-    --textColor: black;
-    --bgColor: white;
-    --colScheme1: #F08080;
-    --colScheme2: #FFC0CB;
-    --colScheme3: mistyrose;
-    --colScheme4: lightpink;
-    --colScheme5: #FFDAB9;
-    --colScheme6: #C6C09C;
-    --colScheme7: #FFB284;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --borderCol: gray;
-        --textColor: white;
-        --bgColor: #19212E;
-        --colScheme1: #313C51;
-        --colScheme2: #485265;
-        --colScheme3: #485265;
-        --colScheme4: var(--colScheme3);
-        --colScheme5: #151B25;
-        --colScheme6: #343F54;
-        --colScheme7: #273246;
-    }
-
-    body {
-        color: white
-    }
-}
-
 * {
-    font-family: FangSong;
-}
+    font-family: fangsong;
 
+
+}
 body {
     background-color: var(--bgColor);
 }
