@@ -21,7 +21,7 @@ This Website uses HTML and CSS and java script code to generate recipes.The reci
 
 ## Screenshots
 
-![YumYard Screenshot](./assets/Images/ColorPalate.jpg)
+![YumYard Screenshot](./assets/Images/screenshot1.gif)
 
 
 (https://aliahg97.github.io/YumYard/)
