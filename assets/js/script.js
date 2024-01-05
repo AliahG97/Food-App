@@ -31,13 +31,13 @@ function createRecipeList(recipes, description) { // Create recipe elements and 
         imgEl.setAttribute('class', 'col-lg-3 col-md-12 recipeImg');
         imgEl.setAttribute('src', `${recipes[i].image}`);
         var infoEl = document.createElement('section');
-        infoEl.setAttribute('class', 'col-lg-9 col-md-12 description');
+        infoEl.setAttribute('class', 'col-lg-9 col-md-12 recipeCon');
         var recipeNameEl = document.createElement('a');
         recipeNameEl.setAttribute('class', 'row recipeName');
         recipeNameEl.setAttribute('href', `https://spoonacular.com/recipes/${recipes[i].title}-${recipes[i].id}`); //Create clickable text that will take you to the recipe webpage.
         recipeNameEl.setAttribute('target', '_blank');
         recipeNameEl.textContent = recipes[i].title;
-        var descriptionEl = document.createElement('pre');
+        var descriptionEl = document.createElement('p');
         descriptionEl.setAttribute('class', 'row description');
         descriptionEl.innerHTML = description[i].summary;
         // Append recipe results to webpage.
