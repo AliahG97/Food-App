@@ -147,7 +147,12 @@ function storeRecentRecipes(latestRecipe) {
 // Append all recent recipes to the HTML as href links.
 function renderRecentRecipes() {
     var recipeHistory = document.getElementById('otherRecipes');
-    recipeHistory.innerHTML = 'Previously Viewed Recipes';
+    recipeHistory.innerHTML = '';
+    var asideTitle = document.createElement('h3');
+    asideTitle.setAttribute('class', 'asideTitle');
+    asideTitle.textContent = 'Previously Used Recipes:';
+    recipeHistory.appendChild(asideTitle);
+    
     
 
     var storedRecipes = JSON.parse(localStorage.getItem('recentRecipes')) || [];

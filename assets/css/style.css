@@ -4,7 +4,7 @@
 
 }
 body {
-    background-color:white   ;
+    background-color: var(--bgColor);
 }
 
 header {
@@ -17,15 +17,24 @@ header {
     border: 2px solid black;
     padding: 10px;
     margin: 10px;
-    background: linear-gradient(to right, #F08080,#FFC0CB);
-    
+    background: linear-gradient(to right, var(--colScheme1), var(--colScheme2));
 }
 
 aside {
+    color: white;
     height: 100%;
     box-sizing: border-box;
     border: 2px solid black;
-    background-color:mistyrose;
+    background-color: var(--colScheme3);
+}
+.asideTitle {
+    font-size: 20px;
+    color:var(--textColor);
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .searchFilter {
@@ -37,17 +46,19 @@ aside {
     border-color: black;
     border: 2px solid black;
     margin: 10px;
-    height:75px;
-    background-color:lightpink;
+    height: 75px;
+    background-color: var(--colScheme4);
 }
+
 .submitBtn {
     width: 100px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
 }
+
 .submitBtn:hover {
-    background-color:lightskyblue;
+    background-color: lightskyblue;
     transition: all 1s;
 }
 
@@ -58,25 +69,28 @@ aside {
 }
 
 .recipe {
-    border: 2px solid black;
-    margin: 20px 0;
+    border: 2px solid var(--borderCol);
+    margin: 0 5% 20px 0;
 }
 
 .recipeImg {
-    display:block;
+    display: block;
     max-height: 400px;
-    /* flex: 0 0 1; */
-    padding-top:10px;
-    padding-bottom:10px;
-    background: #FFB284;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--colScheme5);
 }
 
 .description {
     display: inline-block;
     white-space: pre-line;
     padding: 10px;
-    background-color: #FFDAB9;
+    background-color: var(--colScheme5);
 
+}
+
+.description p {
+    background-color: var(--colScheme5);
 }
 
 .recipeName {
@@ -84,47 +98,50 @@ aside {
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
-    background-color:#FFDAB9;
-    color:black;
+    background-color: var(--colScheme5);
+    color: var(--textColor);
 }
 
 .recipeName:hover {
-    color: rgb(41, 11, 234);
+    color: var(--colScheme7);
     transition: all 1s;
 }
 
 .recipeName:link:visited {
-    color: forestgreen;
+    color: var(--colScheme2);
 }
 
 .otherRecipes {
     font-weight: bold;
-    text-decoration:none;
+    text-decoration: none;
     text-align: center;
-    font-size:larger;
+    font-size: larger;
     color: black;
     padding: 10px 10px;
 }
 
 .recentRecipe {
-    font-weight:lighter;
+    font-weight: lighter;
     text-align: start;
     padding: 10px;
     margin: 5px 0px;
-    color: black;
     font-size: medium;
-    border: 1px solid black; 
-    background:#C6C09C ;
+    border: 1px solid var(--borderCol);
+    color: var(--textColor);
+    background: var(--colScheme6);
 }
+
 .recentRecipe:hover {
-    background-color: #FFDAB9;
+    background-color: var(--colScheme5);
+    color:var(--textColor);
     transition: all 1s;
 }
-.recipeSection{
-    background-color: #FFDAB9; 
+
+.recipeSection {
+    background-color: var(--colScheme5);
 }
 
-.storeLocator, .recipeList {
+.storeLocator,
+.recipeList {
     border-radius: 10px;
 }
-
