@@ -20,7 +20,8 @@ This Website uses HTML and CSS and java script code to generate recipes.The reci
 
 
 ## Screenshots
-![YumYard Screenshot](./assets/images/ColorPalate.jpg)(https://aliahg97.github.io/YumYard/)
+![YumYard Screenshot](./assets/images/ColorPalate.jpg)
+(https://aliahg97.github.io/YumYard/)
 
 ## Usage 
 This is a tool designed to give people ideas of what to cook at random or based on specific ingredients they may have. It's perfect for people who are very busy but may not have the time to sit and think about what they want to eat, all the ingredients, and how to prepare it. Now that can all be done with the click of a button.
