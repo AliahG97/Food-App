@@ -13,15 +13,14 @@ This Website uses HTML and CSS and java script code to generate recipes.The reci
 
 -Recipe Search Filter Ingredients:The recipe is using an API from Snoonacular to display recipes from its library based on the ingredients entered into the search input  by the user and when they click the 'Search' button.
 
--Recent Recipes: When the user clicks any of the hyper links (underlined or in blue) inside of the recipe descriptions, they will automatically be added to the 'previously viewed recipes' and saved to the local storage. Upon clicking the links in th green boxes, its will bring the user back to the full recipe page on spoonaculars website. When the page is refreshed or the users returns to YumYard, the list of searches will remain displayed until local storage is reset and cleared.
+-Recent Recipes:When the user clicks any of the hyper links (underlined or in blue) inside of the recipe descriptions, they will automatically be added to the 'previously viewed recipes' and saved to the local storage. Upon clicking the links in th green boxes, its will bring the user back to the full recipe page on spoonaculars website. When the page is refreshed or the users returns to YumYard, the list of searches will remain displayed until local storage is reset and cleared.
 
--Store Locator:
-The store locator is an achored link within a button that goes to a pre-filled Google Maps search of 'gorcery store', so that when the user clicks the button, it will add in the user's longitude and latitude to then provide a list of the nearest grocery stores currently open.
+-Store Locator:The store locator is an achored link within a button that goes to a pre-filled Google Maps search of 'gorcery store', so that when the user clicks the button, it will add in the user's longitude and latitude to then provide a list of the nearest grocery stores currently open.
 
 
 
 ## Screenshots
-![YumYard Screenshot](./assets/images/YumYard_Screenshot.gif) (https://aliahg97.github.io/YumYard/)
+![YumYard Screenshot](./assets/images/project%201Recording%202024-01-05%20131244.gif) (https://aliahg97.github.io/YumYard/)
 
 ## Usage 
 This is a tool designed to give people ideas of what to cook at random or based on specific ingredients they may have. It's perfect for people who are very busy but may not have the time to sit and think about what they want to eat, all the ingredients, and how to prepare it. Now that can all be done with the click of a button.
