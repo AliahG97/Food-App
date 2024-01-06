@@ -4,13 +4,14 @@ console.log(recipeListEl);
 var recipeSection = document.querySelector('.recipeSection')
 var searchBtnEl = document.querySelector('.submitBtn');
 var groceryStoreEl = document.querySelector('.storeLocator');
+var modeBtnEl = document.querySelector('.darkBtn');
 //Spoonacular API Variables
 var baseUrl = 'https://api.spoonacular.com/';
 var byIngredients = 'recipes/findByIngredients?';
 var summarizeRecipe;
 //var apiKey = 'e3d6ede19b8b4ac39a3e036fefe8455a';
-//var apiKey = 'ef9c25b2e22b4e0d8363c1109951f721';
-var apiKey = 'bfc4f5ea52604ac1a16b7909357b8eed';
+var apiKey = 'ef9c25b2e22b4e0d8363c1109951f721';
+//var apiKey = 'bfc4f5ea52604ac1a16b7909357b8eed';
 
 var userIngredients;
 var byIngredientsUrl;
@@ -109,7 +110,7 @@ searchBtnEl.addEventListener('click', function () { // Add click listener event 
     }
 });
 // Add Event Listener to any Anchor Element on the Page
-$(document).on('click', 'a', function () { 
+$(document).on('click', 'a', function () {
     var recipe = {
         title: this.textContent,
         href: this.href
@@ -152,8 +153,8 @@ function renderRecentRecipes() {
     asideTitle.setAttribute('class', 'asideTitle');
     asideTitle.textContent = 'Previously Used Recipes:';
     recipeHistory.appendChild(asideTitle);
-    
-    
+
+
 
     var storedRecipes = JSON.parse(localStorage.getItem('recentRecipes')) || [];
     //render and element for each recent search
@@ -189,7 +190,7 @@ async function getRandomRecipes() {
     } catch (error) {
         console.error('Error fetching recipes:', error);
     }
-    createRecipeList(data.recipes,data.recipes);
+    createRecipeList(data.recipes, data.recipes);
 };
 
 recipeListEl.addEventListener('click', function () {
@@ -201,8 +202,13 @@ recipeListEl.addEventListener('click', function () {
     getRandomRecipes();
 })
 
-groceryStoreEl.addEventListener('click', function() {
+groceryStoreEl.addEventListener('click', function () {
     window.open('https://www.google.com/maps/search/grocery+store/', '_blank');
+})
+
+modeBtnEl.addEventListener('click', function () {
+    var bodyEl = document.body;
+    bodyEl.classList.toggle('dark-mode');
 })
 
 init();
