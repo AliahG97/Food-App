@@ -32,6 +32,8 @@ To install this project git clone https://github.com/AliahG97/YumYard.git
 
 -Store Locator: The store locator is an anchored link within a button that goes to a pre-filled Google Maps search of 'grocery store' so that when the user clicks the button, it will add in the user's longitude and latitude to then provide a list of the nearest grocery stores currently open.
 
+- Dark Mode: Weather the user wants a darker display that's easy on the eyes, or a bright vibrant display, they can select darkor light mode with the toggle at the top of the page.
+
 ## Usage
 Working professionals and/or student typically has early mornings, fast-paced routines, long hours at work or school, trying to maintain a healthy diet, and going to bed at a reasonable hour isn't easy, a bit of time to cook to eat healthy, but not enough time or energy to think about what to cook for dinner every day. The user can enter the main ingredients they want to use, for example, chicken, rice, and broccoli. 10 options of meals that include chicken, rice, and broccoli. If they are missing ingredients, they can search for more ingredients to make it more specific to the ingredients they already have. The alternative is to click the grocery store locator button and find the nearest open grocery store for the missing ingredients.
 
@@ -39,19 +41,17 @@ Homemakers and chefs who cook frequently and sometimes just want to try somethin
 
 ## Credits
 
-Aliah Guerra (https://github.com/AliahG97): HTML, CSS, Random Recipe API (javascript), store locator button, and README.md.
-Ryan Walker (https://github.com/Ryanwalker2): Ingredients list API (javascript and CSS styling) & recent recipe local Storage.
-GitHub: Host repository, collaboration, version control, task management, and webpage deployment.
-HTML: Basic structure of the web page, and store locator button
-CSS: Style for webpage and all details
-Java Script: functionality of webpage and APIs
-Spoonacular Server-side API: The recipes Library where all the recipes are being pulled from.
-
-https://spoonacular.com/food-api
+- Aliah Guerra (https://github.com/AliahG97): HTML, CSS, Random Recipe API (javascript), store locator button, and README.md.
+- Ryan Walker (https://github.com/Ryanwalker2): Ingredients list API (javascript and CSS styling) & recent recipe local Storage.
+- GitHub: Host repository, collaboration, version control, task management, and webpage deployment.
+- HTML: Basic structure of the web page, and store locator button
+- CSS: Style for webpage and all details
+- Java Script: functionality of webpage and APIs
+- Spoonacular Server-side API: The recipes Library where all the recipes are being pulled from (https://spoonacular.com/food-api).
 
 ## License
 Creative Commons License
-© YumYard by Aliah Guerra & Ryan Walker 2023. Confidential and Proprietary. All Rights Reserved.
+© YumYard by Aliah Guerra & Ryan Walker 2024. Confidential and Proprietary. All Rights Reserved.
 
 ## Contributing
 
@@ -74,8 +74,8 @@ Creative Commons License
 
 4. check the console to see what the error code is.
 
-5. If the Error code is 402, note that there are no more payment tokens to call the APIs, wait until they refill in 24 hours.
+5. If the error code is 402, note that there are no more payment tokens to call the APIs, wait until they refill in 24 hours.
 
-6. Or if you need to continue using the API for development purposes, create another Spoonacular API account to get another API Key, and then comment out the existing APIKeys in the Javascript, and paste in the new API key so that the new key is the only uncommented key.
+6. Or if you need to continue using the API for development purposes, create another Spoonacular API account to get another API Key, and then comment out the existing API Keys in the Javascript, and paste in the new API key so that the new key is the only uncommented key.
 
 7. Repeat this step or uncomment a different API in the Javascript (given the tokens have been refilled).
