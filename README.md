@@ -3,7 +3,7 @@
 ## Description
 Humans need to eat, but deciding what to cook every day, missing ingredients, and/or having a long day can make the thought of preparing dinner overwhelming.
 YumYard is a recipe search assistant website designed to give people ideas of what to cook at the push of a button.
-It's perfect for Working professionals, students, homemakers, chefs, and even kids! Using HTML, CSS, Javascript code, and 2 server-side APIs, the recipes can be generated randomly or based on the user's specific ingredients. If the user is missing a few key ingredients, there's also a handy button that locates the nearest grocery store based on the user's current location. Any previously searched/visited recipe links are saved to the home page, so when the user returns to YumYard, all of those links can be easily revisited without searching again.
+It's perfect for working professionals, students, homemakers, chefs, and even kids! Using HTML, CSS, Javascript code, and 2 server-side APIs, the recipes can be generated randomly or based on the user's specific ingredients. If the user is missing a few key ingredients, there's also a handy button that locates the nearest grocery store based on the user's current location. Any previously searched/visited recipe links are saved to the home page, so when the user returns to YumYard, all of those links can be easily revisited without searching again.
 
 ## Table of contents
 - [Installation](#installation)
@@ -39,9 +39,9 @@ Homemakers, chefs, who cook frequently and sometimes just want to try something 
 
 ## Credits
 
-Aliah Guerra: HTML, CSS, Random Recipe API (javascript), store locator button, and README.md
-Ryan Walker: Ingredients list API (javascript and CSS styling) & recent recipe local Storage.
-GitHub: Save repository, collaboration, version control, task management, and webpage deployment.
+Aliah Guerra (https://github.com/AliahG97/): HTML, CSS, Random Recipe API (javascript), store locator button, and README.md
+Ryan Walker (https://github.com/Ryanwalker2): Ingredients list API (javascript and CSS styling) & recent recipe local Storage.
+GitHub: Host repository, collaboration, version control, task management, and webpage deployment.
 HTML: Basic structure of the web page, and store locator button
 CSS: Style for webpage and all details
 Java Script: functionality of webpage and APIs
