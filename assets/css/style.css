@@ -236,6 +236,6 @@ h2 {
     flex: 1 1 auto;
     max-width: 15vw;
     max-height: 15vh;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 70px;
+    min-height: 70px;
 }
