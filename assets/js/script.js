@@ -76,8 +76,6 @@ async function getRecipeDescription(recipes) {
     createRecipeList(recipes, validRecipeData);
 }
 
-
-
 function getRecipeList() { // Get list of recipes the use the entered ingredients
     byIngredientsUrl = `${baseUrl}${byIngredients}apiKey=${apiKey}&ingredients=${userIngredients}&number=${recipeNum}&ranking=${ranking}&ingorePantry=${ignorePantry}`;
 
