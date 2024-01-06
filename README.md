@@ -39,7 +39,7 @@ Homemakers and chefs who cook frequently and sometimes just want to try somethin
 
 ## Credits
 
-Aliah Guerra (https://github.com/AliahG97): HTML, CSS, Random Recipe API (javascript), store locator button, and README.md
+Aliah Guerra (https://github.com/AliahG97): HTML, CSS, Random Recipe API (javascript), store locator button, and README.md.
 Ryan Walker (https://github.com/Ryanwalker2): Ingredients list API (javascript and CSS styling) & recent recipe local Storage.
 GitHub: Host repository, collaboration, version control, task management, and webpage deployment.
 HTML: Basic structure of the web page, and store locator button
